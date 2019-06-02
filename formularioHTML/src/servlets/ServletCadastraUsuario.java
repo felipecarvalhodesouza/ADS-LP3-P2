@@ -9,6 +9,10 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/*Crie um formulário HTML (action = ""), dentro de um Servlet, para que o usuário informe um nome e um email. 
+
+Recupere esses dados e exiba-os na própria página.*/
+
 @WebServlet(name = "ServletCadastroUsuario", urlPatterns = { "/CadastroUsuario" })
 public class ServletCadastraUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
