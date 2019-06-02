@@ -1,0 +1,15 @@
+package negocio;
+
+/*
+ * Crie um novo projeto padrão Servlet. Nesse projeto, faça um pacote para a regra (chamado "negocio"), onde deverá existir uma classe abstrata chamada "Figura", que implementará a interface abaixo:
+
+Ainda no pacote "negocio", crie 2 classes, Circulo e Retangulo, derivadas da classe Figura, e implemente as regras de negócio (no caso, o método "calcularArea"), bem como os atributos necessários para tal cálculo.
+
+Em outro pacote, chamado "servlets", crie o servlet chamado "ServletForm" e, dentro deste, crie um formulário para receber os valores necessários para realizar o cálculo das áreas das figuras círculo e retângulo. Crie, também, 2 botões, com os textos "Calcular área do círculo" e "Calcular área do retângulo".
+
+Neste mesmo pacote, crie um servlet chamado "ServletFiguras" e, nele, execute as regras de negócio para exibir os valores calculados de acordo com o botão clicado no formulário HTML.<?xml version="1.0" encoding="ISO-8859-1"?>
+ * 
+ */
+public interface IFigura {
+	float calcularArea();
+}
