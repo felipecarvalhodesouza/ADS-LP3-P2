@@ -25,7 +25,9 @@ public class HomeServlet extends HttpServlet {
 			out.println("<title>Meu primeiro Servlet</title>");
 			out.println("</head>");
 			out.println("<body>");
-			out.println("<h1>Quantidade de requisições (visitas): " + contador++ + "</h1>");
+			String par1 = request.getParameter("parametro1");
+			String par2 = request.getParameter("parametro2");
+			out.println("<h1>Recebimento de parâmetros: " + par1 + " e "+ par2 + "</h1>");
 			out.println("</body>");
 			out.println("</html>");
 		}
